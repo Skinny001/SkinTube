@@ -48,7 +48,7 @@ const PlayVideo = ({videoId}) => {
   return (
     <div className='play-video'>
         {/* <video src={video1} controls autoPlay muted></video> */}
-        <iframe  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         <h3>{apiDate?apiDate.snippet.title:"Title Here"}</h3>
         <div className="play-video-info">
             <p>{apiDate?value_converter(apiDate.statistics.viewCount):"16k"} Views &bull; {apiDate?moment(apiDate.snippet.publishedAt).fromNow():""}</p>
@@ -82,7 +82,7 @@ const PlayVideo = ({videoId}) => {
                     <p>{item.snippet.topLevelComment.snippet.textDisplay}</p>
                     <div className='comment-action'>
                         <img src={like} alt="" />
-                        <span>244</span>
+                        <span>{value_converter(item.snippet.topLevelComment.snippet.likeCount)}</span>
                         <img src={dislike} alt="" />
                     </div>
                 </div>

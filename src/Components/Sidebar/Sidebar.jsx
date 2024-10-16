@@ -14,6 +14,8 @@ import simon from '../../assets/simon.png'
 import tom from '../../assets/tom.png'
 import megan from '../../assets/megan.png'
 import cameron from '../../assets/cameron.png'
+import web3 from '../../assets/web3.png'
+import logo1 from '../../assets/logo1.png'
 
 const Sidebar = ({sidebar,category,setCategory}) => {
   return (
@@ -59,7 +61,7 @@ const Sidebar = ({sidebar,category,setCategory}) => {
         <div className='subscribed-list'>
             <h3>Subscribed</h3>
             <div className="side-link">
-                <img src={jack} alt="" /><p>Web3bridge</p>
+                <img src={web3} alt="" /><p>Web3bridge</p>
             </div>
 
             <div className="side-link">

@@ -8,6 +8,7 @@ import notification_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/jack.png'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import logo1 from '../../assets/logo1.png'
 
 const Navbar = ({setSidebar}) => {
   return (
@@ -18,7 +19,7 @@ const Navbar = ({setSidebar}) => {
             />
             <Link to='/'>
                 <img className='logo' 
-                    src={logo} alt="" 
+                    src={logo1} alt="" 
                 />
             </Link>
         </div>

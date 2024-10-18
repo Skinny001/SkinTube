@@ -1,5 +1,13 @@
 # React + Vite
 
+# SkinTube 
+Is a clone app from Youtube with YouTube API
+
+# strat
+clone the code to your local manchine 
+npm install
+npm run dev 
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

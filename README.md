@@ -3,7 +3,7 @@
 # SkinTube 
 Is a clone app from Youtube with YouTube API
 
-# strat
+# start
 clone the code to your local manchine 
 npm install
 npm run dev 
